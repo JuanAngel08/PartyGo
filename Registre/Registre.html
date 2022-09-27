@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="./Registre.css">
+    <!--Fond Awesome-->
+    <script src="https://kit.fontawesome.com/1cf5a60052.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="div">
+        <h1>Registro</h1>
+    </div>
+<!--Div Principal-->
+
+       <div id="ContainerPrincipal" class="container">
+           <!--Row Titulo--> 
+            <div  id="CotaineInterno" class="row">
+                <div  class="col-1">
+                    <a href="../LoginG.html">
+                        <i id="return"class="fa-regular fa-circle-left fa-2xl"></i>
+                    </a>
+                </div>
+                <div  class="col-10">
+                    <h2 id="Titulo">Tipo</h2>
+                </div>
+            </div>
+                <!--ROW botones--> 
+                <div class="row" id="CampoBotones">
+
+                      <!--Boton Usuario-->   
+                    <div id="Usuario" class="btn" onclick="VerRegistroPersonaComun()"> 
+                        <h3>Persona Comun</h3>
+                        <img  id="usuarios"src="../StyleLogin/usuarios.png" alt="">
+                    </div>
+                 <!--Boton Empresa-->    
+                    <div id="Empresa"  class="btn" onclick="VerRegistroEmpresas()"> 
+                        <h3>Empresa</h3>
+                        <img  id="usuarios"src="../StyleLogin/Empresa.png" alt="">
+                    </div>
+                  
+                </div>
+                 <!--Row Formulario Personas--> 
+                 
+                 <Form class="container" id="containerRegistroPersonaComun">
+                             <h3 id="TituloRegistroPersonas">Registro Persona Comun</h3>
+
+                     <div  id="rowFormulario"class="row">
+                            <div  class="col-4">
+                                     <label  id="fornularioText"for="exampleInputEmail1" class="form-label">Nombre</label>
+                                     <input type="text" class="form-control"  aria-describedby="name" placeholder="Fulanito"> 
+                             </div>
+
+                             <div class="col-4">
+                                    <label id="fornularioText" for="exampleInputEmail1" class="form-label">Apellidos</label>
+                                    <input type="text" class="form-control"  aria-describedby="name" placeholder="Perez">
+                             </div>
+
+                            <div class="col-4">
+                                     <label  id="fornularioText" for="exampleInputEmail1" class="form-label">Correo</label>
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            </div>
+                      </div>
+            
+                    <div  id="rowFormulario"class="row">
+                            <div  class="col-4">
+                                    <label  id="fornularioText"for="exampleInputEmail1" class="form-label">Telefono</label>
+                                    <input type="number" class="form-control" id="InputUsuario" aria-describedby="number">
+                            </div>
+
+                            <div class="col-4">
+                                    <label id="fornularioText" for="exampleInputEmail1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            </div>
+
+                            <div class="col-4">
+                                    <label  id="fornularioText" for="exampleInputEmail1" class="form-label">Numero de identificacion</label>
+                                    <input type="number"class="form-control" id="InputUsuario" aria-describedby="number">
+                            </div>
+                     </div>
+
+                     
+                     <div  id="rowFormulario"class="row">
+                             <div  class="col-4">
+                                      <label  id="fornularioText"for="exampleInputEmail1" class="form-label">fecha de expedicion </label>
+                                     <input type="date" class="form-control" id="InputUsuario" aria-describedby="emailHelp">
+                             </div>
+
+                            <div class="col-4">
+                                    <label id="fornularioText" for="exampleInputEmail1" class="form-label">Localidad</label>
+                                     <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                            <option selected>-Sin seleccionar-</option>
+                            <option value="1">1.Usaquén</option>
+                            <option value="2">2.Chapinero</option>
+                            <option value="3">3.Santa Fe</option>
+                            <option value="4">4.San Cristobal</option>
+                            <option value="5">5.Usme</option>
+                            <option value="6">6.Tunjuelito</option>
+                            <option value="7">7.Bosa</option>
+                            <option value="8">8.Kennedy</option>
+                            <option value="9">9.Fontibón</option>
+                            <option value="10">10.Engativá</option>
+                            <option value="11">11.Barrios Unidos</option>
+                            <option value="12">12.Teusaquillo</option>
+                            <option value="13">13.Los Mártires</option>
+                            <option value="14">14.Antonio Nariño</option>
+                            <option value="15">15.Puente Aranda</option>
+                            <option value="16">16.Puente Aranda</option>
+                            <option value="17">17.La Candelaria</option>
+                            <option value="18">18.Rafael Uribe uribe</option>
+                            <option value="19">19.Ciudad Bolívar</option>
+                            <option value="20">20.Sumapaz</option>
+                                     </select>
+                        </div>
+
+                            <div class="col-4">
+                                 <label  id="fornularioText" for="exampleInputEmail1" class="form-label">Barrio</label>
+                                <input type="email" class="form-control" id="InputUsuario" aria-describedby="emailHelp">
+                           </div>
+                    </div>
+
+                        <div id="campoBoton" class="row" >
+                            <button type="submit" id="botonIngresar"  class="btn btn-primary">Guardar</button> 
+                        </div>
+                    
+                   
+                    </form>
+           
+                 <!--Row Formulario Empresas--> 
+                 
+                 <form class="container" id="containerRegistroEmpresas">
+                    <h3 id="TituloRegistroPersonas">Registro Empresas</h3>
+                        <div  id="rowFormulario"class="row">
+
+                             <div  class="col-4">
+                               <label  id="fornularioText"for="exampleInputEmail1" class="form-label">Nombre</label>
+                              <input type="text" class="form-control"  aria-describedby="name" placeholder="Eventos SA"> 
+                              </div>
+
+                             <div class="col-4">
+                              <label id="fornularioText" for="exampleInputEmail1" class="form-label">Nit</label>
+                              <input type="number" class="form-control"  aria-describedby="number" placeholder="123456789">
+                             </div>
+
+                             <div class="col-4">
+                                 <label  id="fornularioText" for="exampleInputEmail1" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            </div>
+
+                        </div>
+        
+                       <div  id="rowFormulario"class="row">
+                             <div  class="col-4">
+                                  <label  id="fornularioText"for="exampleInputEmail1" class="form-label">Telefono</label>
+                                  <input type="number" class="form-control" id="InputUsuario" aria-describedby="number" placeholder="123456789">
+                             </div>
+
+                              <div class="col-4">
+                                 <label id="fornularioText" for="exampleInputEmail1" class="form-label">Contraseña</label>
+                                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                             </div>
+
+                             <div class="col-4">
+                                <label  id="fornularioText" for="exampleInputEmail1" class="form-label">Numero de identificacion del representante legal</label>
+                                <input type="number"class="form-control" id="InputUsuario" aria-describedby="number" placeholder="123456789">
+                             </div>
+
+                        </div>
+
+                 
+                            <div  id="rowFormulario"class="row">
+                                         <div  class="col-4">
+                                                <label  id="fornularioText"for="exampleInputEmail1" class="form-label">Direccion </label>
+                                                 <input type="text" class="form-control" id="InputUsuario" placeholder="Calle 1 # 1-1">
+                                         </div>
+
+                                 <div class="col-4">
+                                     <label id="fornularioText" for="exampleInputEmail1" class="form-label">Localidad</label>
+                                     <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                             <option selected>-Sin seleccionar-</option>
+                                             <option value="1">1.Usaquén</option>
+                                             <option value="2">2.Chapinero</option>
+                                             <option value="3">3.Santa Fe</option>
+                                             <option value="4">4.San Cristobal</option>
+                                             <option value="5">5.Usme</option>
+                                             <option value="6">6.Tunjuelito</option>
+                                             <option value="7">7.Bosa</option>
+                                             <option value="8">8.Kennedy</option>
+                                             <option value="9">9.Fontibón</option>
+                                             <option value="10">10.Engativá</option>
+                                             <option value="11">11.Barrios Unidos</option>
+                                             <option value="12">12.Teusaquillo</option>
+                                             <option value="13">13.Los Mártires</option>
+                                             <option value="14">14.Antonio Nariño</option>
+                                             <option value="15">15.Puente Aranda</option>
+                                             <option value="16">16.Puente Aranda</option>
+                                             <option value="17">17.La Candelaria</option>
+                                             <option value="18">18.Rafael Uribe uribe</option>
+                                             <option value="19">19.Ciudad Bolívar</option>
+                                             <option value="20">20.Sumapaz</option>
+                                         </select>
+                                  </div>
+
+                                         <div class="col-4">
+                                                    <label  id="fornularioText" for="exampleInputEmail1" class="form-label">Barrio</label>
+                                                    <input type="email" class="form-control" id="InputUsuario" aria-describedby="emailHelp" placeholder="Chapinero">
+                                         </div>
+                  </div>
+                  
+                    <div id="campoBoton" class="row" >
+                        <button  onclick="Alerta()"type="button" id="botonIngresar"  class="btn btn-primary">Guardar</button> 
+                    </div>
+                
+               
+                </form>
+           
+       </div>
+  
+
+
+       <script src="../Registre/jquery-3.1.1.min.js"></script>
+       <script src="./scriptRegistro.js"></script>
+       <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

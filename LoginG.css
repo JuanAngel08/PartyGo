@@ -1,0 +1,114 @@
+body{
+  /*  background-image: url(./StyleLogin/FondoLogin.jpg);*/
+
+  background-color: #491889;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%233f0e80' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#div{
+  text-align:center;
+  margin-top: 2%;
+  color: aliceblue;
+  font-family: Monotype Corsiva;
+  background-color: rgba(0, 0, 0, 0.473);
+}
+#div h1{
+  font-size: 50px;
+ 
+}
+#DivPrincipal{
+margin-top: 2%;
+}
+/* Div izquierdo */
+#DivIzquierdo{
+padding-left: 8%;
+padding-right: 0%;
+padding-top: 1%;
+}
+#icono{
+  width: 80%;
+  padding: 5% 1% 1% 1%; 
+}
+/* Div Linea Separadora*/
+#linea{
+  text-align:center;
+}
+/*  Linea Separadora*/
+#LineaSeparadora{
+  width: 3%;
+  height: 98%;
+  background-color: aliceblue;
+  border-radius: 80%;
+ 
+}
+/* Div Derecho*/ 
+#DivDerecho{
+  margin-top: 1%;
+  padding: 1%;
+  border-radius: 1rem;
+  background-color: transparent;/*#00ff55;*/
+box-shadow:0 10px 25px rgb(83, 76, 92);
+margin-bottom: 2%;
+
+  }
+
+  /* Div Derecho Titulo*/ 
+ #DivDerecho h3{
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: Monotype Corsiva;
+    font-size: 50PX;
+    color: aliceblue;
+  }
+  #DivDerecho label{
+    margin-left: 10%;
+    font-family: Monotype Corsiva;
+    font-size: 30PX;
+    color: aliceblue;
+    
+
+  }
+  /* Div Derecho Input*/ 
+  #InputUsuario, #InputContraseña{
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px 25px 25px 25px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 90%;
+  }
+
+  /*  Boton*/ 
+  #campoBoton{
+    text-align:center;   
+  }
+   /* Campo Div  Boton*/ 
+  #botonIngresar{
+     padding: 0%;
+    background: linear-gradient( black, #4507b8);
+    width: 60%;
+    font-family: Monotype Corsiva;
+    font-size: 25PX;
+    color: aliceblue;
+    border: wheat;
+  }
+  #botonIngresar:hover{
+    
+    box-shadow: 0 12px 16px rgba(255, 255, 255, 0.658);
+  }
+  #botonesUltimos{
+    text-align: center;
+    padding: 15px;
+  }
+  #boton{
+    background-color: transparent;
+    color: aliceblue;
+    font-family: Monotype Corsiva;
+    border: none;
+    font-size: 20px;
+    margin-left: 10%;
+    text-decoration: none;
+    
+  }
+ 
+  
